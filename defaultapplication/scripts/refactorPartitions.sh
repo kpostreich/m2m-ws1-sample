@@ -89,6 +89,12 @@ cp $MICROSERVICESWEBPATH/DefaultApplication-ear/src/main/liberty/config/server.x
 echo "----> server.xml - Removed database datasoures not used in web fron-end service"
 echo "----> $MONOLITHWEBPATH/DefaultApplication-ear/src/main/liberty/config/server.xml updated"
 echo ""
+
+cp $MICROSERVICESWEBPATH/labfiles/Increment.java $MONOLITHWEBPATH/DefaultWebApplication/src/main/java/com/ibm/defaultapplication/Increment.java
+echo "----> Increment.java - Removed @Id annotation from method to work around known issue in Cardinal code generation"
+echo "----> $MONOLITHWEBPATH/DefaultWebApplication/src/main/java/com/ibm/defaultapplication/Increment.java Updated"
+echo ""
+
 echo "===== Web Partition Refactoring complete! ====="
 echo ""
 
